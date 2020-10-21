@@ -1,0 +1,155 @@
+.invest {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 82px 17px 0;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item-arrow {
+    width: 58px;
+    height: 5px;
+    background: url("/images/arrow-left.png") no-repeat center;
+    background-size: cover;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: 120px;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  &__group {
+    position: relative;
+    width: 1252px;
+    height: 60px;
+    margin: 12px auto 0;
+    background: url("/images/icons/line.svg") no-repeat center;
+    background-size: cover;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -1px;
+      width: 6px;
+      height: 5px;
+      background: url("/images/icons/arrow-top.svg") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: 1700px) {
+    width: 1130px;
+
+    &__group {
+      width: 998px;
+      height: 48px;
+      background-size: contain;
+
+      &:after {
+        left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1366px) {
+    width: 830px;
+
+    &__text {
+      font-size: 13px;
+    }
+
+    &__group {
+      width: 730px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 682px;
+
+    &__text {
+      font-size: 11px;
+    }
+
+    &__group {
+      width: 577px;
+
+      &:after {
+        top: 10px;
+        left: -2px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 19px 17px 0;
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      order: 2;
+    }
+
+    &__item {
+      min-height: auto;
+    }
+
+    &__item-arrow {
+      width: 6px;
+      height: 49px;
+      background: url("/images/icons/arrow-down.svg") no-repeat center;
+      background-size: cover;
+      margin: 10px 0;
+    }
+
+    &__group {
+      width: 34px;
+      height: 620px;
+      margin: 0;
+      background: url("/images/line-mob.png") no-repeat center;
+      background-size: cover;
+      order: 1;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 28px;
+        width: 5px;
+        height: 6px;
+        background: url("/images/arrow-left-min.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+}

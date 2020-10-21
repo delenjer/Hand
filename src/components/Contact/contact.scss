@@ -1,0 +1,341 @@
+.contact {
+  margin-top: 124px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 65px;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__wrap {
+    display: flex;
+    margin-top: 72px;
+  }
+
+  &__img {
+    width: 50%;
+    height: 637px;
+    background: url("/images/contact.png") no-repeat center;
+    background-size: cover;
+  }
+
+  &__form {
+    width: 50%;
+  }
+
+  @media (max-width: 1700px) {
+    &__img {
+      width: 43%;
+      background: url("/images/contact-min.png") no-repeat center;
+      background-size: cover;
+    }
+
+    &__form {
+      width: 58%;
+    }
+  }
+
+  @media (max-width: 1366px) {
+    &__title {
+      font-size: 55px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__wrap {
+      margin-top: 52px;
+    }
+
+    &__img {
+      width: 36%;
+      background-position: 101% 0;
+    }
+
+    &__form {
+      width: 64%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__img {
+      display: none;
+    }
+
+    &__form {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 10px;
+    margin-top: 50px;
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__text {
+      font-size: 13px;
+      padding: 0 16px;
+      line-height: 17px;
+    }
+
+    &__wrap {
+      margin-top: 15px;
+    }
+  }
+}
+
+.form {
+  position: relative;
+  padding: 102px 0 76px 115px;
+  background: linear-gradient(360deg, #fffdba 2.72%, #feffb8 100%);
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 122px;
+    right: 104px;
+    width: 581px;
+    height: 749px;
+    background: url("/images/hand-form.png") no-repeat center;
+    background-size: contain;
+    z-index: 1;
+  }
+
+  &__content {
+    width: 650px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__full-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 58px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding-bottom: 11px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #eb7a6b;
+    background-color: inherit;
+    //font-family: $main-fonts;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #eb7a6b;
+    opacity: 0.5;
+
+    &::-webkit-input-placeholder {
+      color: #eb7a6b;
+    }
+    &::-moz-placeholder {
+      color: #eb7a6b;
+    }
+    &:-ms-input-placeholder {
+      color: #eb7a6b;
+    }
+  }
+
+  &__full-name-input {
+    width: 257px;
+  }
+
+  &__textarea {
+    display: block;
+    width: 100%;
+    height: 183px;
+    padding: 7px 12px;
+    margin-top: 73px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 4px;
+    //font-family: $main-fonts;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #eb7a6b;
+    opacity: 0.5;
+
+    &::-webkit-input-placeholder {
+      color: #eb7a6b;
+    }
+    &::-moz-placeholder {
+      color: #eb7a6b;
+    }
+    &:-ms-input-placeholder {
+      color: #eb7a6b;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    background-color: #eb7a6b;
+    padding: 12px;
+    margin: 32px auto 0;
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 16px 18px -6px #be734f;
+    transition: box-shadow 0.3s;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: 1700px) {
+    &:after {
+      right: 37px;
+      width: 535px;
+      height: 690px;
+    }
+
+    &__content {
+      width: 100%;
+      max-width: 567px;
+    }
+  }
+
+  @media (max-width: 1366px) {
+    padding: 102px 0 76px 57px;
+  }
+
+  @media (max-width: 1024px) {
+    &__content {
+      margin: 0 auto;
+    }
+
+    &:after {
+      top: 185px;
+      right: 0;
+      width: 440px;
+      height: 567px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 16px;
+
+    &:after {
+      top: 119px;
+      width: 283px;
+      height: 365px;
+    }
+
+    &__full-name {
+      flex-direction: column;
+      margin-bottom: 38px;
+    }
+
+    &__full-name-input {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 38px;
+      }
+    }
+
+    &__textarea,
+    &__input {
+      font-size: 13px;
+    }
+
+    &__textarea {
+      margin-top: 38px;
+    }
+  }
+}
+
+.thanks {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #fffdba 2.72%, #feffb8 100%);
+  z-index: 3;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 110px;
+    right: 37px;
+    width: 535px;
+    height: 690px;
+    background: url("/images/hand-form.png") no-repeat center;
+    background-size: contain;
+    z-index: 1;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 65px;
+    color: #eb7a6b;
+    margin-top: 16px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+    color: #96998c;
+    margin-top: 11px;
+  }
+
+  @media (max-width: 1024px) {
+    &:after {
+      top: auto;
+      bottom: 0;
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 283px;
+      height: 365px;
+    }
+
+    &__icon {
+      width: 200px;
+      object-fit: contain;
+    }
+
+    &__title {
+      font-size: 45px;
+    }
+  }
+}
+
+.visible-thanks {
+  display: block;
+}
+
+.error {
+  border-bottom: 2px solid blue;
+}

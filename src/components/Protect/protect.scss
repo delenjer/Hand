@@ -1,0 +1,40 @@
+.protect {
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  &__content {
+    width: 442px;
+  }
+
+  &__line {
+    margin: 14px 0 25px;
+  }
+
+  @media (max-width: 1024px) {
+    &__content {
+      width: 341px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 54px;
+
+    &__wrap {
+      padding: 0 16px;
+    }
+
+    &__content {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+}

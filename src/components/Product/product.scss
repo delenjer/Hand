@@ -1,0 +1,336 @@
+.product {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 800px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: 0;
+    width: 845px;
+    height: 706px;
+    background-color: #fefab1;
+    z-index: -1;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 195px;
+    width: 595px;
+    height: 736px;
+    //background: url("../images/logo_hand-min.png") no-repeat center;
+
+    background-size: contain;
+    z-index: 2;
+  }
+
+  &__content {
+    position: relative;
+    width: 1465px;
+    margin-top: 88px;
+    z-index: 4;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 75px;
+    color: #262626;
+    padding-left: 100px;
+  }
+
+  &__description-content {
+    margin-left: 130px;
+  }
+
+  &__description-container {
+    margin-top: 196px;
+  }
+
+  &__description-wrap {
+    background-color: #b3f8e9;
+  }
+
+  &__description {
+    position: relative;
+    display: flex;
+    background-color: rgba(179, 229, 248, 0.7);
+    padding: 24px 31px 153px;
+    z-index: 2;
+  }
+
+  &__description-title {
+    width: 100%;
+    max-width: 300px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+  }
+
+  &__description-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__bottle-big {
+    position: absolute;
+    top: 14px;
+    right: 340px;
+    width: 389px;
+    height: 691px;
+    //background: url("../images/100-ml-bottle_normal-min.png") no-repeat center;
+    background-size: cover;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: -48%;
+      width: 615px;
+      height: 105px;
+      //background: url("../images/shadow-bottel.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  &__mouse-down {
+    position: absolute;
+    bottom: 33px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 4;
+
+    animation: arrow;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes arrow {
+    from {
+      bottom: 20px;
+    }
+    to {
+      bottom: 10px;
+    }
+  }
+
+  @media (max-width: 1700px) {
+    &:after {
+      width: 597px;
+      height: 669px;
+    }
+
+    &:before {
+      top: 75px;
+      left: 62px;
+      width: 491px;
+      height: 611px;
+    }
+
+    &__content {
+      width: 1171px;
+    }
+
+    &__title {
+      font-size: 75px;
+      padding-left: 0;
+    }
+
+    &__description-container {
+      margin-top: 115px;
+    }
+
+    &__bottle-big {
+      top: -40px;
+      right: 191px;
+      width: 334px;
+      height: 594px;
+
+      &:before {
+        left: -57%;
+      }
+    }
+  }
+
+  @media (max-width: 1366px) {
+    padding-left: 100px;
+
+    &:after {
+      width: 420px;
+    }
+
+    &:before {
+      top: 150px;
+      left: 42px;
+      width: 378px;
+      height: 471px;
+      background-size: contain;
+    }
+
+    &__title {
+      font-size: 55px;
+      line-height: 70px;
+    }
+
+    &__content {
+      width: 100%;
+      max-width: 1151px;
+    }
+
+    &__description-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__description-wrap {
+      width: 90%;
+    }
+
+    &__description-content {
+      margin-left: 28px;
+    }
+
+    &__description-text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__bottle-big {
+      width: 294px;
+      height: 523px;
+      right: 50px;
+
+      &:before {
+        bottom: -50px;
+        left: -20%;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding-left: 0;
+
+    &:after {
+      width: 362px;
+    }
+
+    &:before {
+      top: 152px;
+      left: 0;
+      width: 362px;
+      height: 471px;
+    }
+
+    &__description-wrap {
+      width: 100%;
+    }
+
+    &__title {
+      margin-left: 92px;
+    }
+
+    &__content {
+      margin-top: 105px;
+    }
+
+    &__description-container {
+      margin-top: 140px;
+    }
+
+    &__description {
+      min-height: 536px;
+      flex-direction: column;
+      padding: 36px 50px 73px;
+    }
+
+    &__img {
+      width: 135px;
+      height: 232px;
+      object-fit: contain;
+    }
+
+    &__mouse-down {
+      bottom: 19px;
+    }
+
+    &__bottle-big {
+      top: 50px;
+      width: 307px;
+      height: 546px;
+      left: 75%;
+      transform: translate(-75%, 0);
+
+      &:before {
+        left: -24%;
+        width: 120%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    min-height: auto;
+    &:after,
+    &:before {
+      display: none;
+    }
+
+    &__title {
+      position: relative;
+      font-size: 32px;
+      line-height: 38px;
+      margin-left: 16px;
+      z-index: 3;
+    }
+
+    &__content {
+      margin-top: 20px;
+    }
+
+    &__description-container {
+      margin-top: 137px;
+    }
+
+    &__bottle-big {
+      top: 8px;
+      width: 190px;
+      height: 339px;
+      left: 75%;
+      transform: translate(-75%, 0);
+
+      &:before {
+        left: -24%;
+        width: 100%;
+      }
+    }
+
+    &__description {
+      min-height: auto;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__description-title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 20px;
+    }
+
+    &__description-text {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 14px;
+    }
+  }
+}

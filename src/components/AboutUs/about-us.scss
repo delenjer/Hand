@@ -1,0 +1,122 @@
+.about-us {
+  margin-top: 96px;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffdba;
+  }
+
+  &__content {
+    width: 458px;
+    padding: 82px 0;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__line-small {
+    width: 100%;
+    height: 2px;
+    background-color: #43484d;
+    margin: 55px 0;
+  }
+
+  &__line {
+    margin-top: 89px;
+  }
+
+  &__product {
+    position: relative;
+  }
+
+  &__description {
+    width: 230px;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    z-index: 10;
+  }
+
+  &__description-content {
+    padding: 42px 27px;
+
+    &--content-lemon {
+      background-color: #fbf89c;
+    }
+
+    &--content-mint {
+      background-color: #c3d8e9;
+    }
+
+    &--content-natural {
+      background-color: #eaeaea;
+    }
+  }
+
+  &__description-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.5px;
+    color: #262626;
+  }
+
+  &__description-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #262626;
+    margin-top: 19px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    color: #262626;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 40%;
+      right: -27px;
+      transform: translate(0, -50%);
+      width: 27px;
+      height: 20px;
+      background: url("/images/icons/ic_arrow.svg") no-repeat center;
+      background-size: contain;
+      transition: right 0.1s;
+    }
+
+    &:hover {
+      &:after {
+        right: -24px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__content {
+      width: 100%;
+      padding: 50px 16px;
+    }
+
+    &__description-content {
+      padding: 27px;
+    }
+
+    &__description-title {
+      font-size: 25px;
+    }
+
+    &__description-text {
+      font-size: 16px;
+      line-height: 1.4;
+      margin-top: 15px;
+    }
+  }
+}
