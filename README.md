@@ -1,3 +1,3 @@
-#H Hand check
+#Hand check
 
-#Demo link - https://delenjer.github.io/hand/
+Demo link - https://delenjer.github.io/hand/
