@@ -16,7 +16,7 @@
   &__item-arrow {
     width: 58px;
     height: 5px;
-    background: url("./images/arrow-left.png") no-repeat center;
+    background: url("/images/arrow-left.png") no-repeat center;
     background-size: cover;
   }
 
@@ -41,7 +41,7 @@
     width: 1252px;
     height: 60px;
     margin: 12px auto 0;
-    background: url("./images/icons/line.svg") no-repeat center;
+    background: url("/images/icons/line.svg") no-repeat center;
     background-size: cover;
 
     &:after {
@@ -51,7 +51,7 @@
       left: -1px;
       width: 6px;
       height: 5px;
-      background: url("./images/icons/arrow-top.svg") no-repeat center;
+      background: url("/images/icons/arrow-top.svg") no-repeat center;
       background-size: cover;
     }
   }
@@ -127,7 +127,7 @@
     &__item-arrow {
       width: 6px;
       height: 49px;
-      background: url("./images/icons/arrow-down.svg") no-repeat center;
+      background: url("/images/icons/arrow-down.svg") no-repeat center;
       background-size: cover;
       margin: 10px 0;
     }
@@ -136,7 +136,7 @@
       width: 34px;
       height: 620px;
       margin: 0;
-      background: url("./images/line-mob.png") no-repeat center;
+      background: url("/images/line-mob.png") no-repeat center;
       background-size: cover;
       order: 1;
 
@@ -147,7 +147,7 @@
         left: 28px;
         width: 5px;
         height: 6px;
-        background: url("./images/arrow-left-min.png") no-repeat center;
+        background: url("/images/arrow-left-min.png") no-repeat center;
         background-size: cover;
       }
     }
